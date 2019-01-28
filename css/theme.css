@@ -1,0 +1,17 @@
+:root {
+  --color-primary-gold: #ad974f;
+  --color-primary-gold-dark: #8e793e;
+  --color-secondary-gray: #eaeaea;
+  --color-tertiary-dark: #231f20;
+
+  --font-primary: "Raleway", sans-serif;
+  --font-secondary: "Montserrat", sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
+
+h1 {
+  color: var(--color-secondary-gray);
+}
