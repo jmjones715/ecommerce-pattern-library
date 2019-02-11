@@ -5,9 +5,9 @@
 }
 
 .btn:hover {
-  background-color: var(--color-primary-gold-dark);
-  border-color: var(--color-primary-gold-dark);
-  color: var(--color-tertiary-dark);
+  background-color: var(--color-secondary-gray);
+  border-color: var(--color-secondary-gray);
+  color: var(--color-primary-gold);
 }
 
 .btn-ghost {
@@ -18,6 +18,19 @@
 
 .btn-ghost:hover {
   background-color: var(--color-primary-gold-dark);
+  border-color: var(--color-primary-gold-dark);
+  color: var(--color-secondary-gray);
+}
+
+.btn-ghost-gold {
+  background-color: transparent;
+  border-color: var(--color-primary-gold-dark);
+  color: var(--color-primary-gold-dark);
+}
+
+.btn-ghost-gold:hover {
+  background-color: var(--color-primary-gold-dark);
+  border-color: var(--color-primary-gold-dark);
   color: var(--color-secondary-gray);
 }
 
@@ -29,5 +42,6 @@
 
 .btn-ghost-dark:hover {
   background-color: var(--color-tertiary-dark);
-  color: var(--color-tertiary-dark);
+  border-color: var(--color-tertiary-dark);
+  color: var(--color-secondary-gray);
 }

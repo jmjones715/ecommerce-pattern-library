@@ -13,11 +13,23 @@ html {
 }
 
 h1 {
+  font-family: var(--font-secondary);
   color: var(--color-secondary-gray);
 }
 
 h2 {
+  font-family: var(--font-secondary);
   color: var(--color-primary-gold);
+}
+
+h3 {
+  font-family: var(--font-secondary);
+  color: var(--color-tertiary-dark);
+}
+
+h4 {
+  font-family: var(--font-secondary);
+  color: var(--color-primary-gold-dark);
 }
 
 a {
