@@ -5,7 +5,6 @@ require 'babosa'
 require 'deep_merge'
 require 'yaml'
 require 'json'
-require 'unicode_titlecase'
 require 'css_parser'
 require 'color_contrast_calc'
 
@@ -24,6 +23,7 @@ module JekyllPatternbot
   require 'jekyll_patternbot/parsers/modulifier'
   require 'jekyll_patternbot/parsers/gridifier'
   require 'jekyll_patternbot/parsers/typografier'
+  require 'jekyll_patternbot/parsers/css_comment_tag'
   require 'jekyll_patternbot/parsers/css_color'
   require 'jekyll_patternbot/parsers/css_font'
   require 'jekyll_patternbot/parsers/css_utility'
@@ -38,6 +38,7 @@ module JekyllPatternbot
   require 'jekyll_patternbot/finders/patterns'
   require 'jekyll_patternbot/finders/sample_pages'
 
+  require 'jekyll_patternbot/processors/patterns_order'
   require 'jekyll_patternbot/processors/brand'
   require 'jekyll_patternbot/processors/modules'
   require 'jekyll_patternbot/processors/icons'

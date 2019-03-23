@@ -5,6 +5,7 @@ module JekyllPatternbot
       {
         :primary => false,
         :secondary => false,
+        :tertiary => false,
         :accent => [],
       }
     end
@@ -37,13 +38,14 @@ module JekyllPatternbot
       font_weight_digits = font_weight.gsub /[^\d]/, ''
       return 'normal' if font_weight_digits == '400'
       return 'bold' if font_weight_digits == '700'
+      return font_weight_digits
     end
 
     def self.rule_sets_to_weights(rulesets)
       weights = {}
       rulesets.each do |ruleset|
         font_family = ruleset.get_value('font-family').gsub(/['";]/, '')
-        font_family_slug = font_family.to_slug.normalize.to_s
+        font_family_slug = font_family.force_encoding("utf-8").to_slug.normalize.to_s
         weights[font_family_slug] = {} unless weights.key? font_family_slug
         font_weight = self.normalize_font_weight ruleset.get_value 'font-weight'
         weights[font_family_slug][font_weight] = self.font_weight.clone unless weights[font_family_slug].key? font_weight
@@ -83,7 +85,7 @@ module JekyllPatternbot
 
     def self.parse_font(dec, val, available_weights)
       font_family = val.match(/[^\,\;]*/)[0].gsub(/['"]/, '')
-      font_family_slug = font_family.to_slug.normalize.to_s
+      font_family_slug = font_family.force_encoding("utf-8").to_slug.normalize.to_s
       font = self.font.clone
       font[:name] = font_family_slug
       font[:name_pretty] = font_family
@@ -104,7 +106,8 @@ module JekyllPatternbot
         if self.is_font? dec
           fonts[:primary] = self.parse_font(dec, val, available_weights) if dec.match(/^\-\-font\-primary/)
           fonts[:secondary] = self.parse_font(dec, val, available_weights) if dec.match(/^\-\-font\-secondary/)
-          fonts[:accent].push self.parse_font(dec, val, available_weights) unless dec.match(/^\-\-font\-(primary|secondary)/)
+          fonts[:tertiary] = self.parse_font(dec, val, available_weights) if dec.match(/^\-\-font\-tertiary/)
+          fonts[:accent].push self.parse_font(dec, val, available_weights) unless dec.match(/^\-\-font\-(primary|secondary|tertiary)/)
         end
       end
       fonts

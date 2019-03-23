@@ -7,7 +7,11 @@ module JekyllPatternbot
 
     def self.normalize_filename(filename)
       return filename unless filename
-      if Config['permalink'].match? /pretty/ or not Config['permalink'].match? /\:output_ext/
+      output_ext = false
+      if Config['permalink'].match? /\:output_ext/ or Config['permalink'].match? /^(date|ordinal|none)$/
+        output_ext = true
+      end
+      unless output_ext
         if filename.match? /^index/
           if filename.match? /\.html/
             return filename
@@ -18,15 +22,15 @@ module JekyllPatternbot
           return "#{filename.sub(/\.html/, '')}/index.html"
         end
       end
-      unless filename.match? /\.html/
+      unless filename.match? /\.html$/
         return "#{filename}.html"
       end
       filename
     end
 
     def self.title(pattern, subpattern, data, subdata)
-      group_title = self.slug_to_words(pattern).unicode_titlecase
-      pattern_title = self.slug_to_words(subpattern).unicode_titlecase
+      group_title = self.slug_to_words(pattern).capitalize
+      pattern_title = self.slug_to_words(subpattern).capitalize
       group_title = data['title'] if data.is_a?(Hash) and data.key?('title')
       pattern_title = subdata['title'] if subdata.is_a?(Hash) and subdata.key?('title')
       "#{pattern_title} · #{group_title}"

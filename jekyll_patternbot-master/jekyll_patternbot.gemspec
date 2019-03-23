@@ -22,10 +22,10 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = '~> 2'
 
   spec.add_runtime_dependency 'jekyll', '~> 3.8'
+  spec.add_runtime_dependency 'unicode', '~> 0.4'
   spec.add_runtime_dependency 'colorator', '~> 1'
   spec.add_runtime_dependency 'babosa', '~> 1'
   spec.add_runtime_dependency 'deep_merge', '~> 1'
-  spec.add_runtime_dependency 'unicode_titlecase', '~> 0.0'
   spec.add_runtime_dependency 'css_parser', '~> 1'
   spec.add_runtime_dependency 'color_contrast_calc', '~> 0.5'
   spec.add_runtime_dependency 'indifference', '~> 0.0'

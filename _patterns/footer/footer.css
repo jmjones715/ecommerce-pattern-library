@@ -1,0 +1,11 @@
+.dark-gray {
+  background-color: var(--color-tertiary-dark);
+}
+
+.light-gray {
+  color: var(--color-secondary-gray);
+}
+
+.gold-txt {
+  color: var(--color-primary-gold);
+}

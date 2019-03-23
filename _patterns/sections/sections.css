@@ -1,0 +1,20 @@
+.gold-background {
+  background-color: var(--color-primary-gold-dark);
+}
+
+h2 {
+  color: var(--color-secondary-gray);
+  font-weight: 600;
+}
+
+.limited-time {
+  font-weight: 300;
+}
+
+.light-gray {
+  color: var(--color-secondary-gray);
+}
+
+.dark-gray-txt {
+  color: var(--color-tertiary-dark);
+}

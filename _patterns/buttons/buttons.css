@@ -45,3 +45,31 @@
   border-color: var(--color-tertiary-dark);
   color: var(--color-secondary-gray);
 }
+
+.btn-ghost-light {
+  background-color: transparent;
+  border-color: var(--color-secondary-gray);
+  color: var(--color-secondary-gray);
+}
+
+.btn-ghost-light:hover {
+  background-color: var(--color-tertiary-dark);
+  border-color: var(--color-tertiary-dark);
+  color: var(--color-secondary-gray);
+}
+
+.see-more-btn {
+  background-color: var(--color-primary-gold);
+  border-color: var(--color-primary-gold);
+  color: var(--color-secondary-gray);
+}
+
+.see-more-btn:hover {
+  background-color: var(--color-tertiary-dark);
+  border-color: var(--color-tertiary-dark);
+  color: var(--color-primary-gold);
+}
+
+.light-gray-background {
+  background-color: var(--color-secondary-gray);
+}

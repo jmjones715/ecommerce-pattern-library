@@ -35,3 +35,12 @@ h4 {
 a {
   color: var(--color-primary-gold);
 }
+
+b {
+  font-family: var(--font-secondary);
+  color: var(--color-primary-gold-dark);
+}
+
+mark {
+  background-color: var(--color-primary-gold)
+}

@@ -5,6 +5,8 @@ module JekyllPatternbot
       {
         :primary => [],
         :secondary => [],
+        :tertiary => [],
+        :quaternary => [],
         :neutral => [],
         :accent => [],
         :raw => {},
@@ -29,7 +31,7 @@ module JekyllPatternbot
       parsed_color = ColorHelper::color val
       color = self.color.clone
       color[:name] = dec
-      color[:name_pretty] = PatternHelper.slug_to_words(dec.sub(/\-\-color\-/, '')).unicode_titlecase
+      color[:name_pretty] = PatternHelper.slug_to_words(dec.sub(/\-\-color\-/, '')).capitalize
       color[:raw] = val
       color[:hex] = parsed_color.hex.downcase
       color[:rgba] = "rgba(#{parsed_color.rgb.join(', ')}, 1)"
@@ -42,8 +44,10 @@ module JekyllPatternbot
         if self.is_color? dec
           colors[:primary].push(self.parse_color(dec, val)) if dec.match(/\-\-color\-primary/)
           colors[:secondary].push(self.parse_color(dec, val)) if dec.match(/\-\-color\-secondary/)
+          colors[:tertiary].push(self.parse_color(dec, val)) if dec.match(/\-\-color\-tertiary/)
+          colors[:quaternary].push(self.parse_color(dec, val)) if dec.match(/\-\-color\-quaternary/)
           colors[:neutral].push(self.parse_color(dec, val)) if dec.match(/\-\-color\-neutral/)
-          colors[:accent].push(self.parse_color(dec, val)) unless dec.match(/\-\-color\-(primary|secondary|neutral)/)
+          colors[:accent].push(self.parse_color(dec, val)) unless dec.match(/\-\-color\-(primary|secondary|tertiary|quaternary|neutral)/)
           colors[:raw][dec] = val
         end
       end
