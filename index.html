@@ -1,5 +1,21 @@
 ---
-layout:default
+layout: default
 ---
 
-{% pattern header/header %}
+{% pattern banner/banner %}
+{% pattern sections/20-off %}
+<div class="unit xs-1 s-1 m-1 l-1 xl-1 pad-t-2">
+  <h2 class="text-center unit xs-1 s-1 m-1 l-1 xl-1 push-0">New Releases</h2>
+</div>
+<div class="grid">
+  {% pattern cards/classic-gold %}
+  {% pattern cards/noir-matte %}
+  {% pattern cards/panerai-blue %}
+</div>
+{% pattern buttons/see-more-btn %}<div class="unit xs-1 s-1 m-1 l-1 xl-1 pad-t-2">
+  <h2 class="text-center unit xs-1 s-1 m-1 l-1 xl-1 push-0">We sell over 100 watch brands</h2>
+  {% pattern sections/companies %}
+</div>
+<div class="unit xs-1 s-1 m-1 l-1 xl-1">
+  {% pattern sections/gauranteed %}
+</div>

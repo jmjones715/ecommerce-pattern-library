@@ -2,8 +2,11 @@
   background-color: var(--color-primary-gold-dark);
 }
 
+.twenty-off {
+  font-weight: 600;
+}
+
 h2 {
-  color: var(--color-secondary-gray);
   font-weight: 600;
 }
 
@@ -18,3 +21,5 @@ h2 {
 .dark-gray-txt {
   color: var(--color-tertiary-dark);
 }
+
+box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);

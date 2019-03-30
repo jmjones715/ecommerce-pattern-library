@@ -2,10 +2,18 @@
   background-color: var(--color-tertiary-dark);
 }
 
-.light-gray {
+.light-gray-text {
   color: var(--color-secondary-gray);
 }
 
 .gold-txt {
   color: var(--color-primary-gold);
+}
+
+@media only screen and (min-width: 25em) {
+
+  .social {
+    text-align: center;
+  }
+
 }
