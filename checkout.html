@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<h1 class="pad-t-2">Cart</h1>
+<h2>Billing Information</h2>
+
+<div class="grid">
+  <div class="unit xs-1 s-1 m-1-2">
+    {% pattern forms/name %}
+    {% pattern forms/last-name %}
+    {% pattern forms/email %}
+    {% pattern forms/address %}
+    {% pattern forms/address-billing %}
+    {% pattern forms/city %}
+    {% pattern forms/province %}
+    {% pattern forms/country %}
+    {% pattern forms/phone %}
+    {% pattern forms/mobile-phone %}
+  </div>
+  <div class="unit xs-1 s-1 m-1-2 gutter">
+    {% pattern cards/purchase %}
+  </div>
+</div>
+
+<div class="grid">
+  {% pattern cards/noir-matte %}
+  {% pattern cards/panerai-blue %}
+  {% pattern cards/classic-gold %}
+</div>
+
+{% pattern sections/gauranteed %}
