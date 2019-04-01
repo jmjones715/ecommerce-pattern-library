@@ -1,3 +1,22 @@
 .card {
   text-align: center;
 }
+
+.price {
+  font-family: var(--font-secondary);
+  color: var(--color-primary-gold-dark);
+  font-weight: 600;
+}
+
+.size {
+  font-family: var(--font-secondary);
+}
+
+.title {
+  color: var(--color-tertiary-dark);
+  font-weight: 600;
+}
+
+.gray-box {
+  background-color: var(--color-secondary-gray);
+}

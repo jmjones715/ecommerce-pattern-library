@@ -25,3 +25,13 @@ patternbot:
       Raleway was chosen because it is great for body copy text. It is also a simple font that suits a modern/classy theme.
     typefaces.secondary: |
       Montserratwas chosen to be used fo headings. Its a bigger font, but still keeps that same modern feel.
+
+collections:
+  products:
+    output: true
+
+defaults:
+  - scope:
+      path: _products
+    values:
+      layout: product
