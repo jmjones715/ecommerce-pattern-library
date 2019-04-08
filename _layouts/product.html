@@ -2,6 +2,11 @@
 layout: default
 ---
 
-<h1>{{page.name}}</h1>
-<p>{{page.description}}</p>
-<img src="{{page.image}}" alt="">
+{% pattern sections/product-detail-banner %}
+{% pattern forms/search-bar %}
+
+<h2 class="push-2">Classic Gold</h2>
+
+{% pattern cards/purchase %}
+
+{% pattern sections/gauranteed %}
