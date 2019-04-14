@@ -17,6 +17,11 @@ h1 {
   color: var(--color-secondary-gray);
 }
 
+.h1-dark {
+  font-family: var(--font-secondary);
+  color: var(--color-tertiary-dark);
+}
+
 h2 {
   font-family: var(--font-secondary);
   color: var(--color-primary-gold);
@@ -40,6 +45,14 @@ a:hover {
   color: var(--color-primary-gold);
 }
 
+.a-dark {
+  color: var(--color-primary-gold-dark);
+}
+
+.a-black {
+  color: var(--color-tertiary-dark);
+}
+
 b {
   font-family: var(--font-secondary);
   color: var(--color-primary-gold-dark);
@@ -47,4 +60,12 @@ b {
 
 mark {
   background-color: var(--color-primary-gold);
+}
+
+ul > li::before {
+  color: var(--color-primary-gold-dark);
+}
+
+ul > li {
+  color: var(--color-primary-gold-dark);
 }

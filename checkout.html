@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: checkout
 ---
 
-<h1 class="pad-t-2">Cart</h1>
-<h2>Billing Information</h2>
+<h2 class="pad-t gutter-2 yotta">Checkout</h2>
+<h5 class="gutter-2 giga push-0 pad-b-1-2">Billing Information</h5>
 
 <div class="grid">
   <div class="unit xs-1 s-1 m-1-2">
@@ -14,6 +14,7 @@ layout: default
     {% pattern forms/address-billing %}
     {% pattern forms/city %}
     {% pattern forms/province %}
+    {% pattern forms/postal-code %}
     {% pattern forms/country %}
     {% pattern forms/phone %}
     {% pattern forms/mobile-phone %}
@@ -23,10 +24,11 @@ layout: default
   </div>
 </div>
 
+<h3 class="gutter-2 push-0 pad-t-2 peta pad-b-1-4">Related Products</h3>
 <div class="grid">
+  {% pattern cards/classic-gold %}
   {% pattern cards/noir-matte %}
   {% pattern cards/panerai-blue %}
-  {% pattern cards/classic-gold %}
 </div>
 
 {% pattern sections/gauranteed %}

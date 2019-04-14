@@ -2,7 +2,7 @@
   color: #eaeaea;
 }
 
-.masthead {
+.masthead-main {
   background-color: var(--color-tertiary-dark);
 }
 
@@ -16,7 +16,7 @@
     text-align: left;
   }
 
-  .masthead {
+  .masthead-main {
     position: absolute;
     background-color: transparent;
   }

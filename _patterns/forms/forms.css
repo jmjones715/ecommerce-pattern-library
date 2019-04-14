@@ -40,3 +40,21 @@
   color: var(--color-tertiary-dark);
   font-weight: 700;
 }
+
+@media only screen and (min-width: 38em) {
+
+.padding-form {
+  padding-left: 2.6rem;
+  padding-right: 2.6rem;
+}
+
+.padding-form-l {
+  padding-left: 2.6rem;
+}
+
+.padding-form-r {
+  padding-right: 2.6rem;
+}
+
+
+}
