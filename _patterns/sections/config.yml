@@ -1,0 +1,29 @@
+title: "Sections"
+description:
+  Buttons are used for a dramatic call to action
+
+patterns:
+  product-detail:
+    title: "Product Detail"
+    description: |
+      The description of a product
+  20-off:
+    title: "20% Off"
+    description: |
+      A section used for promotions. Is also the first section of the home page
+  companies:
+    title: "Companies"
+    description: |
+      A section which includes a list of company brands that the site sells
+  gauranteed:
+    title: "Gauranteed"
+    description: |
+      A section which includes icons that descibes warrantess and company gauranties
+  product-detail-banner:
+    title: "Product Detail Banner"
+    description: |
+      Banner for the product detail page
+  product-list-banner:
+    title: "Product List Banner"
+    description: |
+      Banner for the product list page

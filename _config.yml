@@ -14,6 +14,7 @@ patternbot:
       typography.headings: "white"
       buttons.ghost: "--color-tertiary-dark"
       buttons.ghost-light: "--color-tertiary-dark"
+      header: "--color-tertiary-dark"
   rationales:
     colors.primary: |
       A gold colour was chosen to represent a more high-end and classy mood. It sets te tone for the site, and contasts well against darker colours.
@@ -25,6 +26,8 @@ patternbot:
       Raleway was chosen because it is great for body copy text. It is also a simple font that suits a modern/classy theme.
     typefaces.secondary: |
       Montserratwas chosen to be used fo headings. Its a bigger font, but still keeps that same modern feel.
+    header: |
+      The main navigation of the site. It has a transparent backgroundand and goes over the banner image.
 
 collections:
   products:
