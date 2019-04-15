@@ -26,7 +26,6 @@ patternbot:
     typefaces.secondary: |
       Montserratwas chosen to be used fo headings. Its a bigger font, but still keeps that same modern feel.
 
-
 collections:
   products:
     output: true
