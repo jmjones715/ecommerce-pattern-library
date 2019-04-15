@@ -69,3 +69,11 @@ ul > li::before {
 ul > li {
   color: var(--color-primary-gold-dark);
 }
+
+.dark-gold-text {
+  color: var(--color-primary-gold-dark);
+}
+
+.gold-text {
+  color: var(--color-primary-gold);
+}
