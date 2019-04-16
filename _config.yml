@@ -14,7 +14,6 @@ patternbot:
       typography.headings: "white"
       buttons.ghost: "--color-tertiary-dark"
       buttons.ghost-light: "--color-tertiary-dark"
-      header: "--color-tertiary-dark"
   rationales:
     colors.primary: |
       A gold colour was chosen to represent a more high-end and classy mood. It sets the tone for the site, and contrasts well against darker colours.
